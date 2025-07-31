@@ -8,6 +8,6 @@ Compilación de reportes dinámicos integrando código R y LaTeX en documentos S
 
 ## Reporte dinámico
 
-## Referencias biblioráficas
+## Referencias bibliográficas
 - Tutorial Sweave y Latex, disponible en https://cran.r-project.org/doc/contrib/Rivera-Tutorial_Sweave.pdf
 - Edición online de Latex puro, disponible en https://www.overleaf.com/
