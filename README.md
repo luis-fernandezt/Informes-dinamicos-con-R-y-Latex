@@ -1,2 +1,2 @@
-# Iinformes Dinámicos con R y Latex
+# Informes Dinámicos con R y Latex
 Compilación de reportes dinámicos integrando código R y LaTeX en documentos Sweave (.Rnw)
