@@ -1,0 +1,211 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}						% Para ecuaciones y demases
+\usepackage{amsthm}							% Para ecuaciones y demases
+\usepackage{amssymb}
+\usepackage{graphicx} 					% Para insertar graficos							
+\usepackage{verbatim}						% Para escribir codigos
+\usepackage{url}			
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{float}
+\usepackage{environ}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\usepackage{babel}
+\usepackage{array}
+\usepackage{ifthen}
+\usepackage{vwcol}
+\usepackage{pdfpages}
+\usepackage[colorlinks=true, linkcolor=Dark, filecolor=Dark, urlcolor=GRIS1]{hyperref}
+\setlength{\columnsep}{1cm}
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{2.5}
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+
+% función para marcar las variaciones negativas con rojo
+\def\negat#1#2{%
+\ifnum #1<0 \textcolor{red}{#2}\fi
+\ifnum #1>0 \textcolor{gray}{#2}\fi
+\ifnum #1=0 \textcolor{gray}{#2}\fi}
+
+\renewcommand{\familydefault}{\sfdefault} % define el tipo de letra del documento
+
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\interfootnotelinepenalty=10000
+
+\usepackage{booktabs}
+\usepackage[margin=1 in,top=10mm, bottom = 2cm,right = 1.5cm,left=1.5cm,footskip=-2.5pt]{geometry}
+
+\setlength{\textheight}{1.008\textheight} %posicion logo pie
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\renewcommand{\figurename}{Figura}
+%yaleblue from http://latexcolor.com/
+\definecolor{electriccrimson}{rgb}{1.0, 0.0, 0.25}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{viridian}{rgb}{0.25, 0.51, 0.43}
+\definecolor{GRIS1}{RGB}{89,89,89}              
+\definecolor{GRIS2}{RGB}{126,126,126}
+\definecolor{GRIS3}{RGB}{160,160,160}
+\definecolor{GRIS4}{RGB}{200,200,200}
+\definecolor{GRIS5}{RGB}{230,230,230}
+\definecolor{Dark}{RGB}{0,0,0}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\arraystretch}{1.4}
+
+\makeatletter                                                                 
+    \def\footnoterule{\kern-6\p@        % you can put other values to increase vertical space between rule and notes (just try out); difference between the values after "kern" is the width of the rule!
+  \hrule \@width 0.5\columnwidth \kern 6\p@ \interfootnotelinepenalty=10000}  % the in value is the length of the footnoterule
+\makeatother
+
+\setlength{\footnotesep}{0.025cm}
+\setlength{\skip\footins}{0cm}
+
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+%%%%%%%%%%  PAGINA 1 ENCABEZADO
+\begin{document}
+
+\begin{multicols}{2}
+\begin{vwcol}[widths={1}, sep=0.64cm, justify=flush, rule=0pt, indent=0em]
+
+\hspace{-0.7 cm}
+\begin{minipage}[\textheight]{0.15\textwidth}
+\begin{tabular}{l}
+\textbf{\color{electriccrimson}\fontfamily{lmss}\Huge HAY VACANTES}\\
+\textbf{\color{viridian}\fontfamily{lmss}\LARGE ESTUDIO INDEPEDIENTE}\\
+\textbf{\color{GRIS1}\fontfamily{lmss}\normalsize ZONA SUR DE CHILE}\\
+\normalsize \colorbox{viridian}{\textbf{\fontfamily{lmss}\textcolor{white}{Edición nº 1 | Agosto 2024 }} \textcolor{viridian}{.........................................................................................................}}\\
+\end{tabular}
+\end{minipage}
+\end{vwcol}
+
+\hspace{6 cm}
+\noindent\begin{minipage}[\textheight]{0.15\textwidth}
+\includegraphics[height=3cm, width=3cm]{logo.pdf}
+\end{minipage}
+\end{multicols}
+
+%%%%%%%% Titulares %%%%%%%%%%%%%%%%%
+\vspace{-0.8 cm}
+\begin{multicols}{2}
+\begin{vwcol}[widths={0.7}, sep=0.64cm, justify=flush, rule=0pt, indent=0em]
+\begin{minipage}[t]{0.64\textwidth}
+\begin{itemize}
+\item[\color{GRIS1}$\blacksquare$] \normalsize Se estimaron 6.336 vacantes en Los Lagos y 1.819 en Los Ríos, según la encuesta ENADEL 2024.  
+\end{itemize}
+
+\begin{itemize}
+\item[\color{GRIS1}$\blacksquare$] \normalsize En la décima región, la mayor participación de Vacantes se registró en Industrias Manufactureras y Comercio.
+\end{itemize}
+
+\begin{itemize}
+\item[\color{GRIS1}$\blacksquare$] \normalsize En Los Ríos, la  participación de Vacantes se registró en Actividades de servicios administrativos y de apoyo y Agricultura.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%% Principales Resultados %%%%%%%%%%%%%%%%%%%
+\vspace{0.4cm}
+\colorbox{viridian}{\textbf{\textcolor{white}{Principales Resultados \textcolor{viridian}{...............................................................................}}}}
+\vspace{-0.1cm}
+
+\begin{itemize}
+\item[\color{viridian}$\blacksquare$] 
+\textbf{\color{viridian}\fontfamily{lmss}\normalsize Evolución de Vacantes}\\
+\end{itemize}
+
+\vspace{-0.2cm}
+\includegraphics[height=6.3cm, width=12.3cm]{logo.pdf} % agregar grafico 1
+{\tiny Fuente: Elaboración propia, según ENADEL}\\
+\end{minipage}
+
+\hspace{3cm} %espacio horizontal
+\begin{minipage}[t]{0.64\textwidth} %espacio entre texto
+
+\resizebox{5.9cm}{!}{{
+\extrarowheight = -0.5ex
+\renewcommand{\arraystretch}{2.4}
+\begin{tabular} {m{6cm} m{0.5cm} m{0.5cm} }
+\end{tabular}}}
+\end{minipage}
+\end{vwcol}
+%%%%% Marquesina %%%%%%%%
+\hspace{3 cm}
+\noindent\begin{minipage}[\textheight]{0.15\textwidth}
+\includegraphics[height=10.5cm, width=6cm]{logo.pdf}
+\end{minipage}
+\end{multicols}
+
+%%%% Resumen 
+\vspace{-3cm}
+\normalsize\textbf{\color{viridian} Resumen} \\
+\vspace{-0.2cm}
+\begin{vwcol}[widths={0.5,0.5}, sep=0.64cm, justify=flush, rule=0pt, indent=0em] 
+\vspace{-0.4cm}
+
+\normalsize Según la encuesta, se estimaron 4.238 empresas en Los Lagos participando con el 4.6\% del total nacional. En  Región 14, se estimaron 1.654 empresas que participaron con 1,8\% del total país, que totalizó 91.873 empresas.
+\vspace{0.3cm}
+\normalsize Respecto al número de Trabajadores, es estimaron 174.390 personas en Los Lagos y 97.819 en Los Ríos, participando con 3,4\% y 1,9\% respectivamente, respecto del total nacional que fue de 5.126.956 personas según el instrumento.
+\vspace{0.3cm}
+\normalsize Según la encuesta, se estimaron 4.238 empresas en Los Lagos participando con el 4.6\% del total nacional. En  Región 14, se estimaron 1.654 empresas que participaron con 1,8\% del total país, que totalizó 91.873 empresas.
+\vspace{0.3cm}
+\normalsize Respecto al número de Trabajadores, es estimaron 174.390 personas en Los Lagos y 97.819 en Los Ríos, participando con 3,4\% y 1,9\% respectivamente, respecto del total nacional que fue de 5.126.956 personas según el instrumento\\
+\end{vwcol}
+
+%%% notas al pie y firma %%%%%%
+\vspace{-0.1cm}
+\vspace{0.2cm}
+{\tiny P: Cifras provisionales  2021 y 2022.\\
+\tiny R: Cifras rectificadas.\\
+\tiny $^1$Sector Otros: Esta compuesto por\\
+\tiny $^2$Otras Fuentes: Compuesta por}
+
+\begin{multicols}{2}
+\vspace{4cm}
+
+\hspace{4cm}
+\begin{minipage}[t]{0.64\textwidth}
+\vspace{0mm}
+\begin{flushright}
+\normalsize\textbf{\color{electriccrimson} Hay Vacantes} \\
+\normalsize\textbf{\color{viridian} Estudio Independiente} \\
+\normalsize\textbf{\color{GRIS1} Puerto Montt, Los Lagos, Chile } \\
+\normalsize\textbf{\href{https://github.com/luis-fernandezt/encuesta-de-demanda-laboral}{Github.com/luis-fernandezt/encuesta-de-demanda-laboral}}
+\end{flushright}
+\vspace{0.1cm}
+\end{minipage}
+
+\hspace{6.5cm}
+\begin{minipage}[t]{0.64\textwidth}
+\includegraphics[height=2.2cm, width=2.2cm]{logo.pdf}
+\vspace{-0.2cm}
+\end{minipage}
+\end{multicols}
+
+\end{document}
