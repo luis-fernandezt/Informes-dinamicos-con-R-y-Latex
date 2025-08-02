@@ -7,6 +7,7 @@ Compilación de reportes dinámicos integrando código R y LaTeX en documentos S
 - Tener seleccionada la opción (on-the-fly): Always, desde configuración.
 
 ## Reporte dinámico
+Diseño de maqueta en progreso:
 
 <img src="https://raw.githubusercontent.com/luis-fernandezt/Informes-dinamicos-con-R-y-Latex/refs/heads/main/descarga.png" width="420" height="594">
 
