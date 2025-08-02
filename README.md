@@ -8,6 +8,8 @@ Compilación de reportes dinámicos integrando código R y LaTeX en documentos S
 
 ## Reporte dinámico
 
+<img src="https://raw.githubusercontent.com/luis-fernandezt/Informes-dinamicos-con-R-y-Latex/refs/heads/main/descarga.png" width="420" height="594">
+
 ## Referencias bibliográficas
 - Tutorial Sweave y Latex, disponible en https://cran.r-project.org/doc/contrib/Rivera-Tutorial_Sweave.pdf
 - Edición online de Latex puro, disponible en https://www.overleaf.com/
